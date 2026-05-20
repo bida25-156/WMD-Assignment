@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DRUMS</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONIC LAB Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
+      body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+           background-color: #fbf7fcd9;
             text-align: center;
         }
 
@@ -25,7 +27,7 @@
 
         .card {
             background: white;
-            width: 250px;
+            width: 200px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             padding: 10px;
@@ -41,9 +43,23 @@
             font-size: 14px;
             color: #333;
         }
-    </style>
+        .card-container {
+            display: flex;       
+            flex-wrap: wrap;     
+            gap: 15px;           
+            justify-content: flex-start; 
+        }
+
+        .card {
+            flex: 0 1 300px;     
+        }
+        img {
+            border: none;
+        }
+</style>
+
 </head>
-<header> 
+    <header> 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
         <div class="container"> 
             <a class="navbar-brand" href="index.html">SONIC LAB</a> 
@@ -61,52 +77,62 @@
                     <li class="nav-item"> 
                         <a class="nav-link" href="contact.html">Contact</a> 
                     <li class="nav-item">
-                    </li>
-                        <a class="nav-link" href="Keyboards.html">Keyborads</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Drums.html">Drums</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Bass guitar.html">Bass guitars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Lead guitar.html">Lead guitars</a>
+                        <a class="nav-link" href="Sign Up.html">Sign Up</a>
                     </li>
                 </ul> 
             </div> 
         </div> 
     </nav> 
-    <link rel="stylesheet" href="styles.css">
 </header> 
 
 <body>
-
-    <h1>DRUM TYPES</h1>
+      <h1>DRUMS</h1>
 
     <div class="gallery">
 
         <div class="card">
-            <img src="Yahama 5 piece drum set.webp" alt="Image 1">
-            <div class="description">
-                A classic acoustic drum kit with five main drums (snare, bass drum, two rack toms, and floor tom) plus cymbals. It produces a rich, natural sound and is ideal for live performances, studio recording, and beginners learning real drumming technique.
+        <img src="dw_purple 6 peice drum set.avif" alt="Drums">
+        <div class="price">P15,999.00</div>
+        <div class="title">DW PUPLE 6 PEICE DRUM SET</div>
+        <div class="desc">  A 5-string versionIts active/passive EQ and performance presets make it great for players who want both power and flexibility in their sound.
             </div>
-        </div>
+        <a href="Bass guitar.html">CHECKOUT</a>
+    </div>
 
         <div class="card">
-            <img src="Pearl 7 piece drum set.jpg" alt="Image 2">
-            <div class="description">
-                A larger acoustic drum kit with seven drums, offering more toms for a wider range of tones and fills. It provides powerful sound, versatility, and professional performance, making it great for advanced players and live shows.
+        <img src="Pearl 7 piece drum set.jpg" alt="Drums">
+        <div class="price">P19,999.00</div>
+        <div class="title">PEARL 7 PIECE DRUM SET</div>
+        <div class="desc">  A 5-string versionIts active/passive EQ and performance presets make it great for players who want both power and flexibility in their sound.
             </div>
-        </div>
+        <a href="Drums.html">CHECKOUT</a>
+    </div>
+    
+        <div class="card">
+        <img src="Pearl ProfessionalSeries 5 piece drum set.jpg" alt="Drums">
+        <div class="price">P11,999.00</div>
+        <div class="title">PEARL PROFFESIONAL SERIES 5 PIECE DRUM SET</div>
+        <div class="desc">  A 5-string versionIts active/passive EQ and performance presets make it great for players who want both power and flexibility in their sound.
+            </div>
+        <a href="Lead guitar.html">CHECKOUT</a>
+    </div>
 
         <div class="card">
-            <img src="roland vdrums electric copy.jpg" alt="Image 3">
-            <div class="description">
-                An advanced electronic drum kit that uses mesh drum pads and digital sensors to create realistic drum sounds while staying quiet. It includes many built-in drum kits and allows sound customization, making it ideal for practice, recording, and live performance.
+        <img src="TAMA 5piece drum set.webp" alt="Drums">
+        <div class="price">P9,999.00</div>
+        <div class="title">TAMA 5 PIECE DRUM SET</div>
+        <div class="desc">  A 5-string versionIts active/passive EQ and performance presets make it great for players who want both power and flexibility in their sound.
             </div>
-        </div>
-
+        <a href="Keyboards.html">CHECKOUT</a>
+    </div>
+        <div class="card">
+        <img src="Yahama 5 piece drum set.webp" alt="Drums">
+        <div class="price">P79,999.00</div>
+        <div class="title">YAMAHA 5 PIECE DRUM SET</div>
+        <div class="desc">  A 5-string versionIts active/passive EQ and performance presets make it great for players who want both power and flexibility in their sound.
+            </div>
+        <a href="Lead guitar.html">CHECKOUT</a>
+    </div>
     </div>
 
 </body>

@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>LEAD GUITARS</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONIC LAB Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
+      body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+           background-color: #fbf7fcd9;
             text-align: center;
         }
 
@@ -25,7 +27,7 @@
 
         .card {
             background: white;
-            width: 250px;
+            width: 200px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             padding: 10px;
@@ -41,9 +43,23 @@
             font-size: 14px;
             color: #333;
         }
-    </style>
+        .card-container {
+            display: flex;       
+            flex-wrap: wrap;     
+            gap: 15px;           
+            justify-content: flex-start; 
+        }
+
+        .card {
+            flex: 0 1 300px;     
+        }
+        img {
+            border: none;
+        }
+</style>
+
 </head>
-<header> 
+    <header> 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
         <div class="container"> 
             <a class="navbar-brand" href="index.html">SONIC LAB</a> 
@@ -60,53 +76,61 @@
                     </li> 
                     <li class="nav-item"> 
                         <a class="nav-link" href="contact.html">Contact</a> 
-                    <li class="nav-item">
-                    </li>
-                        <a class="nav-link" href="Keyboards.html">Keyborads</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Drums.html">Drums</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Bass guitar.html">Bass guitars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Lead guitar.html">Lead guitars</a>
                     </li>
                 </ul> 
             </div> 
         </div> 
     </nav> 
-    <link rel="stylesheet" href="styles.css">
 </header> 
 
 <body>
-
-    <h1>LEAD GUITAR TYPES</h1>
+    <h1>LEAD GUITARS</h1>
 
     <div class="gallery">
 
         <div class="card">
-            <img src="lead guitar fender strat HSS RW.webp" alt="Image 1">
-            <div class="description">
-                A classic Stratocaster-style guitar with an HSS pickup layout (humbucker in the bridge, single-coils in middle and neck) that makes it very versatile for genres from rock and blues to funk. Its ergonomic body, smooth playability, and responsive pickups give you both warm cleans and crunchy lead tones — a go-to choice for many players.
+        <img src="Cort CR50 BK.jpg" alt="Lead Guitars">
+        <div class="price">P9,999.00</div>
+        <div class="title">CORT CR50</div>
+        <div class="desc">  A 5-string versionIts active/passive EQ and performance presets make it great for players who want both power and flexibility in their sound.
             </div>
-        </div>
+        <a href="Bass guitar.html">CHECKOUT</a>
+    </div>
 
         <div class="card">
-            <img src="Lead guitar ibanez RG652AHMFX-RPB.jpg" alt="Image 2">
-            <div class="description">
-                A high-performance RG Prestige electric guitar with a sleek double-cutaway design and super-fast Super Wizard neck, perfect for lead playing and shredding. It features dual DiMarzio humbuckers for rich, versatile tones and a fixed bridge that delivers solid tuning stability and sustain — a great choice for rock and metal players.
+        <img src="Cort-X-6-BK-X-Series-Electric-Guitar.jpg" alt="Lead Guitars">
+        <div class="price">P3,999.00</div>
+        <div class="title">Cort-X-6-BK-X-Series-Electric-Guitar</div>
+        <div class="desc">  A 5-string versionIts active/passive EQ and performance presets make it great for players who want both power and flexibility in their sound.
             </div>
-        </div>
+        <a href="Drums.html">CHECKOUT</a>
+    </div>
+    
+        <div class="card">
+        <img src="Ibanez RGT1270P.jpg" alt="Lead Guitars">
+        <div class="price">P6,999.00</div>
+        <div class="title">IBANEZ RGT1270P</div>
+        <div class="desc">  A 5-string versionIts active/passive EQ and performance presets make it great for players who want both power and flexibility in their sound.
+            </div>
+        <a href="Lead guitar.html">CHECKOUT</a>
+    </div>
 
         <div class="card">
-            <img src="Cort-X-6-BK-X-Series-Electric-Guitar.jpg" alt="Image 3">
-            <div class="description">
-                A solid-body electric guitar from Cort’s X Series built for versatility and modern playability. It has a double-cutaway basswood body, maple neck with rosewood fretboard, and an H-S-H pickup configuration with a floating tremolo, giving you a wide range of tones from blues to metal and expressive dive-bombs for lead work.
+        <img src="Ibanez-gio-GRX70QA.webp" alt="Lead Guitars">
+        <div class="price">P5,999.00</div>
+        <div class="title">Ibanez-gio-GRX70QA</div>
+        <div class="desc">  A 5-string versionIts active/passive EQ and performance presets make it great for players who want both power and flexibility in their sound.
             </div>
-        </div>
-
+        <a href="Keyboards.html">CHECKOUT</a>
+    </div>
+        <div class="card">
+        <img src="Fender strat HSS RW.webp" alt="Lead Guitars">
+        <div class="price">P5,999.00</div>
+        <div class="title">FENDER STRAT HSS</div>
+        <div class="desc">  A 5-string versionIts active/passive EQ and performance presets make it great for players who want both power and flexibility in their sound.
+            </div>
+        <a href="Lead guitar.html">CHECKOUT</a>
+    </div>
     </div>
 
 </body>

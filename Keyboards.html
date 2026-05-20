@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>KEYBOARDS</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONIC LAB Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
+      body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+           background-color: #fbf7fcd9;
             text-align: center;
         }
 
@@ -25,7 +27,7 @@
 
         .card {
             background: white;
-            width: 250px;
+            width: 200px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             padding: 10px;
@@ -41,9 +43,23 @@
             font-size: 14px;
             color: #333;
         }
-    </style>
+        .card-container {
+            display: flex;       
+            flex-wrap: wrap;     
+            gap: 15px;           
+            justify-content: flex-start; 
+        }
+
+        .card {
+            flex: 0 1 300px;     
+        }
+        img {
+            border: none;
+        }
+</style>
+
 </head>
- <header> 
+    <header> 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
         <div class="container"> 
             <a class="navbar-brand" href="index.html">SONIC LAB</a> 
@@ -60,54 +76,61 @@
                     </li> 
                     <li class="nav-item"> 
                         <a class="nav-link" href="contact.html">Contact</a> 
-                    <li class="nav-item">
-                    </li>
-                        <a class="nav-link" href="Keyboards.html">Keyborads</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Drums.html">Drums</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Bass guitar.html">Bass guitars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Lead guitar.html">Lead guitars</a>
                     </li>
                 </ul> 
             </div> 
         </div> 
     </nav> 
-    <link rel="stylesheet" href="styles.css">
 </header> 
 
 <body>
-
-    <h1>KEYBOARDS TYPES</h1>
+    <h1>KEYBOARDS</h1>
 
     <div class="gallery">
 
         <div class="card">
-            <img src="nord stage 4 keyboard.jpg" alt="Image 1">
-            <div class="description">
-                A high-end stage keyboard known for its premium sound quality and intuitive controls. It combines piano, organ, and synth engines with seamless splits/layers and pro-grade effects. Available in multiple keybed options, it’s a favorite for live performers who need versatile, expressive sounds.
+        <img src="Nord stage 3.jpg" alt="Keyboards">
+        <div class="price">P33,999.00</div>
+        <div class="title">NORD STAGE 3</div>
+        <div class="desc">  A 5-string versionIts active/passive EQ and performance presets make it great for players who want both power and flexibility in their sound.
             </div>
-        </div>
-
-        <div class="card">
-            <img src="yamaha motif xs8 keyboard.jpg" alt="Image 2">
-            <div class="description">
-                A professional 88-key music production workstation with a rich sound engine (AWM2) and expressive weighted keyboard. It offers deep sound shaping, extensive effects, sampling/sequencing tools, and a large color display — ideal for composing, performing, and studio work.
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="roland xps10 keyboard.jpg" alt="Image 3">
-            <div class="description">
-             A lightweight performance synth keyboard with 61 velocity-sensitive keys and a huge palette of built-in sounds — from classic synth tones to ethnic instruments and rhythm backing tracks. It includes audio pads for triggering loops, powerful effects, and easy live controls, making it great for gigging and studio use.
-            </div>
-        </div>
-
+        <a href="Bass guitar.html">CHECKOUT</a>
     </div>
 
+        <div class="card">
+        <img src="ROLAND fantom 8.jpg" alt="Keyboards">
+        <div class="price">P59,999.00</div>
+        <div class="title">ROLAND FANTOM 8</div>
+        <div class="desc">  A 5-string versionIts active/passive EQ and performance presets make it great for players who want both power and flexibility in their sound.
+            </div>
+        <a href="Drums.html">CHECKOUT</a>
+    </div>
+    
+        <div class="card">
+        <img src="ROLAND XPS-10.jpg" alt="Keyboards">
+        <div class="price">P9,999.00</div>
+        <div class="title">ROLAND XPS 10</div>
+        <div class="desc">  A 5-string versionIts active/passive EQ and performance presets make it great for players who want both power and flexibility in their sound.
+            </div>
+        <a href="Lead guitar.html">CHECKOUT</a>
+    </div>
+
+        <div class="card">
+        <img src="nord stage 4.jpg" alt="Keyboards">
+        <div class="price">P49,999.00</div>
+        <div class="title">NORD STAGE 4</div>
+        <div class="desc">  A 5-string versionIts active/passive EQ and performance presets make it great for players who want both power and flexibility in their sound.
+            </div>
+        <a href="Keyboards.html">CHECKOUT</a>
+    </div>
+        <div class="card">
+        <img src="Yamaha motif xs8.jpg" alt="Keyboards">
+        <div class="price">P79,999.00</div>
+        <div class="title">YAMAHA MOTIF XS8</div>
+        <div class="desc">  A 5-string versionIts active/passive EQ and performance presets make it great for players who want both power and flexibility in their sound.
+            </div>
+        <a href="Lead guitar.html">CHECKOUT</a>
+    </div>
+    </div>                
 </body>
 </html>
