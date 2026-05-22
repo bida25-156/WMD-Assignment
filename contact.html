@@ -1,52 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact Me</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Support Form</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+ <link rel="stylesheet" href="styles.css">
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    margin: 0;
+  }
+  
+  .form-container {
+    width: 100%;
+    max-width: 650px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #34495e;
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+
+  .subtitle {
+    color: #4a5568;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .row {
+    display: flex;
+    gap: 20px;
+  }
+
+  .row .form-group {
+    flex: 1; 
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2d3748;
+    font-size: 15px;
+  }
+
+  .required {
+    color: #e53e3e;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    background-color: #f8fafc;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 15px;
+    transition: border-color 0.2s;
+  }
+
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #a0aec0;
+  }
+
+  textarea {
+    resize: vertical; 
+  }
+
+  .submit-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  button {
+    background-color: #4a6583;
+    color: #ffffff;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  button:hover {
+    background-color: #3b5068;
+  }
+
+  @media (max-width: 500px) {
+    .row {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+</style>
 </head>
 <body>
-   <header> 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
-        <div class="container"> 
-            <a class="navbar-brand" href="index.html">My Website</a> 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
-                <span class="navbar-toggler-icon"></span> 
-            </button> 
-            <div class="collapse navbar-collapse" id="navbarNav"> 
-                <ul class="navbar-nav"> 
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="index.html">Home</a> 
-                    </li> 
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="about.html">About</a> 
-                    </li> 
-                </ul> 
-            </div> 
-        </div> 
-    </nav> 
 
-        <!-- Bootstrap CSS --> 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
-        <link rel="stylesheet" href="styles.css">
-    </header>
+<div class="form-container">
+  <h1>Contact Our Support Team</h1>
+  <p class="subtitle">Fill out the form below, and we'll get back to you</p>
 
-    <main>
-       <main class="container my-5"> 
+  <form action="Acknowledgement.html" method="POST">
+    <div class="form-group">
+      <label for="email">Email<span class="required">*</span></label>
+      <input type="email" id="email" name="email" required>
+    </div>
 
-    <h2>Contact Me</h2> 
+    <div class="row">
+      <div class="form-group">
+        <label for="name">Name<span class="required">*</span></label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number<span class="required">*</span></label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+    </div>
 
-    <p>If you'd like to get in touch, feel free to email me at <a href="blessingbagwasi030@.com" class="btn btn-success">blessingbagwasi030@.com</a>.</p> 
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="2"></textarea>
+    </div>
 
+    <div class="submit-btn-container">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>
 
-
-</main> 
-    <footer>
-<p>&copy;2026 Thero Bagwasi</p>
-    </footer>
-    <!-- Bootstrap JS and dependencies --> 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> 
 </body>
 </html>
