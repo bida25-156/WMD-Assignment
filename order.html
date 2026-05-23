@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instrument Order page</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f5f5f5;
+      padding:40px;
+      display:flex;
+      justify-content:center;
+    }
+
+    .container{
+      width:100%;
+      max-width:1100px;
+    }
+
+    h1{
+      font-size:48px;
+      margin-bottom:30px;
+      color:#000;
+    }
+
+    .section-title{
+      margin-top:70px;
+    }
+
+    input,
+    select{
+      width:100%;
+      height:90px;
+      border:2px solid #d9d9d9;
+      border-radius:18px;
+      padding:20px;
+      font-size:24px;
+      outline:none;
+      background:white;
+      margin-bottom:25px;
+    }
+
+    input:focus,
+    select:focus{
+      border:3px solid #0066ff;
+    }
+
+    .row{
+      display:flex;
+      gap:25px;
+    }
+
+    .row input{
+      flex:1;
+    }
+
+    .order-btn-container{
+      display:flex;
+      justify-content:flex-end;
+      margin-top:20px;
+    }
+
+    .order-btn{
+      background:#0077ff;
+      color:white;
+      border:none;
+      padding:18px 50px;
+      font-size:24px;
+      border-radius:12px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .order-btn:hover{
+      background:#005ed6;
+    }
+
+    @media(max-width:768px){
+
+      h1{
+        font-size:36px;
+      }
+
+      .row{
+        flex-direction:column;
+        gap:0;
+      }
+
+      input,
+      select{
+        font-size:20px;
+      }
+
+      .order-btn{
+        width:100%;
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Contact</h1>
+
+    <input type="email" placeholder="Email">
+
+    <h1 class="section-title">Delivery</h1>
+
+    <select>
+      <option>United Kingdom</option>
+      <option>Botswana</option>
+      <option>South Africa</option>
+      <option>United States</option>
+    </select>
+
+    <div class="row">
+      <input type="text" placeholder="First name">
+      <input type="text" placeholder="Last name">
+    </div>
+
+    <input type="text" placeholder="Address">
+
+    <select>
+      <option selected disabled>Instrument</option>
+      <option>ROLAND FANTOM 8</option>
+      <option>ROLAND XPS 10</option>
+      <option>NORD STAGE 3</option>
+      <option>NORD STAGE 4</option>
+      <option>YAMAHA MOTIF XS8</option>
+      <option>YAMAHA TRBX305</option>
+      <option>YAMAHA TRBX304</option>
+      <option>IBANEZ-SR300E</option>
+      <option>IBANEZ SR400</option>
+      <option>IBANEZ BTB746-NTL</option>
+      <option>CORT CR50</option>
+      <option>Cort-X-6-BK-X-Series-Electric-Guitar</option>
+      <option>IBANEZ RGT1270P</option>
+      <option>Ibanez-gio-GRX70QA</option>
+      <option>FENDER STRAT HSS</option>
+      <option>DW PUPLE 6 PEICE DRUM SET</option>
+      <option>PEARL 7 PIECE DRUM SET</option>
+      <option>PEARL PROFFESIONAL SERIES 5 PIECE DRUM SET</option>
+      <option>TAMA 5 PIECE DRUM SET</option>
+      <option>YAMAHA 5 PIECE DRUM SET</option>
+    </select>
+
+    <div class="row">
+      <input type="text" placeholder="City">
+      <input type="text" placeholder="Postcode">
+    </div>
+
+    <input type="tel" placeholder="Phone">
+    
+    <form action="Acknowledgement.html" method="POST">
+
+  <div class="container">
+
+
+    <div class="order-btn-container">
+      <button class="order-btn">Order</button>
+    </div>
+
+  </div>
+
+</form>
+  </div>
+
+</body>
+</html>
